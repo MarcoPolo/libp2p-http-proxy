@@ -12,7 +12,10 @@
         packages.hello = pkgs.hello;
         defaultPackage = self.packages.${system}.hello;
         devShell = pkgs.mkShell {
-          buildInputs = [ pkgs.go ];
+          buildInputs = [ pkgs.go 
+
+              pkgs.nodejs-18_x
+        ];
         };
       });
 }
