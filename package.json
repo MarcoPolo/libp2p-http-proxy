@@ -24,7 +24,7 @@
   "dependencies": {
     "@chainsafe/libp2p-noise": "^11.0.2",
     "@libp2p/webtransport": "^1.0.11",
-    "@marcopolo_/libp2p-fetch": "^0.0.2",
+    "@marcopolo_/libp2p-fetch": "^0.0.3",
     "@multiformats/multiaddr": "^12.1.0",
     "libp2p": "^0.43.3"
   },

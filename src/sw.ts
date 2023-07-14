@@ -39,7 +39,7 @@ const fetchHandler = async (event: FetchEvent): Promise<Response> => {
     const conn = connectTo != null && connectTo.length > 0 ? await libp2p.dial(multiaddr(connectTo)) : (allConns.length > 0 ? allConns[0] : null)
 
     if (conn != null && allConns.length === 0) {
-    // Our first connection. Keep a ping around to keep it alive
+      // Our first connection. Keep a ping around to keep it alive
       const pingInterval = setInterval(() => {
         libp2p.ping(multiaddr(connectTo)).catch(err => {
           console.error('sw ping failed', err)
